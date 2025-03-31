@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.AppHost", "Aspire.AppHost\Aspire.AppHost.csproj", "{ECF70588-ED3F-4AE3-A6CB-81158F20F1D6}"
 EndProject
@@ -11,6 +11,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.Web", "Aspire.Web\Aspire.Web.csproj", "{DB7927CA-1BE5-4D27-9950-CB94F37FC68D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire.Tests", "Aspire.Tests\Aspire.Tests.csproj", "{83B075EE-7232-43F9-AB57-8434D515BA9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{0B130364-B618-4A41-91BB-1FCDCD873075}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{83B075EE-7232-43F9-AB57-8434D515BA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83B075EE-7232-43F9-AB57-8434D515BA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83B075EE-7232-43F9-AB57-8434D515BA9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B130364-B618-4A41-91BB-1FCDCD873075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B130364-B618-4A41-91BB-1FCDCD873075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B130364-B618-4A41-91BB-1FCDCD873075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B130364-B618-4A41-91BB-1FCDCD873075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
