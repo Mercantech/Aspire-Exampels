@@ -8,11 +8,17 @@ var postgres = builder
 
 var postgresdb = postgres.AddDatabase("postgresdb");
 
+var redis = builder
+    .AddRedis("redis")
+    .WithRedisCommander();
+
 var apiService = builder
     .AddProject<Projects.Aspire_ApiService>("apiservice")
     .WithReference(postgresdb)
+    .WithReference(redis)
     .WaitFor(postgresdb)
-    .WaitFor(postgres);
+    .WaitFor(postgres)
+    .WaitFor(redis);
 
 builder
     .AddProject<Projects.Aspire_Web>("webfrontend")

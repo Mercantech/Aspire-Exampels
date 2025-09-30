@@ -6,6 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add service defaults & Aspire client integrations.
 builder.AddServiceDefaults();
 
+// Tilføj Redis support
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("redis");
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddProblemDetails();
