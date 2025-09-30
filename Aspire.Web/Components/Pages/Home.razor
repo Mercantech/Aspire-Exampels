@@ -2,6 +2,129 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4 mb-4">
+                <i class="bi bi-house-door"></i> Velkommen til Aspire Demo
+            </h1>
+            <p class="lead">En demonstration af .NET Aspire med Redis caching og PostgreSQL database</p>
+        </div>
+    </div>
 
-Welcome to your new app.
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-server display-1 text-primary mb-3"></i>
+                    <h5 class="card-title">API Endpoints</h5>
+                    <p class="card-text">Udforsk alle API endpoints med Redis caching performance metrics og test funktionalitet.</p>
+                    <a href="/api-endpoints" class="btn btn-primary">
+                        <i class="bi bi-arrow-right"></i> Gå til API Endpoints
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-memory display-1 text-success mb-3"></i>
+                    <h5 class="card-title">Redis Caching</h5>
+                    <p class="card-text">Se hvordan Redis caching forbedrer performance ved at cache data i hukommelsen.</p>
+                    <ul class="list-unstyled text-start">
+                        <li><i class="bi bi-check text-success"></i> Cache-First strategi</li>
+                        <li><i class="bi bi-check text-success"></i> Performance metrics</li>
+                        <li><i class="bi bi-check text-success"></i> Cache invalidation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-database display-1 text-info mb-3"></i>
+                    <h5 class="card-title">PostgreSQL Database</h5>
+                    <p class="card-text">Kompleks database schema med relations mellem brugere, bookinger og services.</p>
+                    <ul class="list-unstyled text-start">
+                        <li><i class="bi bi-check text-success"></i> Entity Framework Core</li>
+                        <li><i class="bi bi-check text-success"></i> Complex joins</li>
+                        <li><i class="bi bi-check text-success"></i> Migration support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-info-circle"></i> Funktioner i denne demo
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="bi bi-people text-primary"></i> User API</h6>
+                            <ul>
+                                <li>CRUD operationer for brugere</li>
+                                <li>Redis caching med 5-10 minut TTL</li>
+                                <li>Performance test (Database vs Cache)</li>
+                                <li>Test data generering (op til 10.000 brugere)</li>
+                                <li>Cache status og invalidation</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="bi bi-calendar-check text-warning"></i> Booking API</h6>
+                            <ul>
+                                <li>Kompleks frisør booking system</li>
+                                <li>Multiple joins (Customer, Stylist, Services)</li>
+                                <li>Redis caching for komplekse queries</li>
+                                <li>Performance analytics</li>
+                                <li>Test data med realistiske relationer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <h6><i class="bi bi-gear text-success"></i> Teknisk Stack</h6>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <strong>Frontend:</strong><br>
+                                    <span class="badge bg-primary">Blazor Server</span><br>
+                                    <span class="badge bg-secondary">Bootstrap 5</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <strong>Backend:</strong><br>
+                                    <span class="badge bg-success">ASP.NET Core Web API</span><br>
+                                    <span class="badge bg-info">Entity Framework Core</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <strong>Database:</strong><br>
+                                    <span class="badge bg-warning">PostgreSQL</span><br>
+                                    <span class="badge bg-dark">PgAdmin</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <strong>Cache:</strong><br>
+                                    <span class="badge bg-danger">Redis</span><br>
+                                    <span class="badge bg-light text-dark">Redis Commander</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <a href="/api-endpoints" class="btn btn-primary btn-lg">
+                <i class="bi bi-play-circle"></i> Start med at udforske API endpoints
+            </a>
+        </div>
+    </div>
+</div>

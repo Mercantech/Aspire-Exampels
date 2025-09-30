@@ -134,7 +134,7 @@ public class BookingController : ControllerBase
             .Include(b => b.Stylist)
             .Include(b => b.BookingServices)
                 .ThenInclude(bs => bs.Service)
-            .Where(b => b.BookingDate >= DateTime.Today.AddDays(-30))
+            .Where(b => b.BookingDate >= DateTime.UtcNow.Date.AddDays(-30))
             .GroupBy(b => new { 
                 b.Stylist.FirstName, 
                 b.Stylist.LastName, 
@@ -214,7 +214,7 @@ public class BookingController : ControllerBase
                 LastName = $"Efternavn{i}",
                 Email = $"kunde{i}@example.com",
                 Phone = $"+45 {random.Next(10000000, 99999999)}",
-                DateOfBirth = DateTime.Now.AddYears(-random.Next(18, 80)),
+                DateOfBirth = DateTime.UtcNow.AddYears(-random.Next(18, 80)),
                 Notes = $"Test kunde {i}"
             });
         }
@@ -273,7 +273,7 @@ public class BookingController : ControllerBase
         {
             var customer = customers[random.Next(customers.Count)];
             var stylist = stylists[random.Next(stylists.Count)];
-            var bookingDate = DateTime.Today.AddDays(random.Next(-30, 30));
+            var bookingDate = DateTime.UtcNow.Date.AddDays(random.Next(-30, 30));
             var startTime = new TimeSpan(random.Next(9, 17), random.Next(0, 60), 0);
             var duration = random.Next(30, 180); // 30 min til 3 timer
             var endTime = startTime.Add(TimeSpan.FromMinutes(duration));
